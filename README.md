@@ -1,8 +1,45 @@
 # eventhandlingbackend
-Routes:
-i have used two routes for login and register as per your requirement i can do this using only  one route ie if the user doesnt exist i can register him and login i choose the other way
-in case i want to add a login page with password
-Schema:
-i have used mongoDB for the storing users data the schema goes like name,email
-Authentication:
-i have generated jwt token after login and used jwt verification for Authentication but there are no routes that needs to be protected as per the requirement
+
+
+## Routes
+
+- **Login**
+  - Endpoint: `/login`
+  - Method: POST
+  - Description: Allows users to log in with their credentials.
+  - Payload: `email`, `name`
+
+- **Register**
+  - Endpoint: `/register`
+  - Method: POST
+  - Description: Allows new users to create an account.
+  - Payload: `name`, `name`
+
+## Schema
+
+- `name`: User's name.
+- `email`: User's email address.
+
+## Authentication
+
+JWT is used for user authentication. Successful login generates a JWT token.
+
+## Getting Started
+
+1. Clone the repository.
+2. Install dependencies: `npm install`
+3. Configure environment variables.
+4. Start the server: `npm start`
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB
+- JSON Web Tokens (JWT)
+
+## Contact
+
+md.saleem516@gmail.com
+
+
